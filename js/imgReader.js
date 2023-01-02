@@ -1,7 +1,8 @@
-import imagesJson from '/imgesJson.json' assert {type: "json"};
+// import imagesJson from '/imgesJson.json' assert {type: "json"};
+import { images as imagesJson } from './images.js';
 
 const images = imagesJson;
-// console.log(images);
+console.log(images);
 
 const imageOut = document.querySelector('.carousel__slider');
 
