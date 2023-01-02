@@ -1,4 +1,3 @@
-// import imagesJson from '/imgesJson.json' assert {type: "json"};
 import { images as imagesJson } from './images.js';
 
 const images = imagesJson;
