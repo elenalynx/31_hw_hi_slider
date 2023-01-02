@@ -19,9 +19,17 @@ button {
   font-size: 14px;
 }
 
+button:active {
+  background-color: #9a7269;
+}
+
 .container {
   //width: 1024px;
   //margin: auto;
+}
+
+.active {
+  box-shadow: 0 0 10px #000;
 }
 
 .section_carousel {

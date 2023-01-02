@@ -40,10 +40,14 @@ function setPrev(prev) {
     prev.addEventListener('click', () => {
         count--;
         next.style.visibility = 'visible';
+        next.classList.remove('active');
+        prev.classList.add('active');
+
         if (count <= 0) {
             prev.style.visibility = 'hidden';
             // count = images.length - 1;
         }
+
         rollSlider();
     });
 
@@ -53,11 +57,14 @@ function setNext(next) {
     next.addEventListener('click', () => {
         count++;
         prev.style.visibility = 'visible';
+        prev.classList.remove('active');
+        next.classList.add('active');
 
         if (count >= images.length - 1) {
             next.style.visibility = 'hidden';
             // count = 0;
         }
+
         rollSlider();
     });
 }
